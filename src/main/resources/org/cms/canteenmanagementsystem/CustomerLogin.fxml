@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cms.canteenmanagementsystem.CustomerLogin">
+   <children>
+      <ImageView fx:id="myImageView" fitHeight="1000.0" fitWidth="1500.0" layoutX="2.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/foodIcon.jpg" />
+         </image></ImageView>
+      <Button layoutX="36.0" layoutY="682.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="46.0" prefWidth="96.0" style="-fx-background-color: blue;" text="Back" textFill="#eae3e3">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="CloseBtn" layoutX="32.0" layoutY="621.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="46.0" prefWidth="96.0" style="-fx-background-color: red;" text="Close" textFill="#f7eded">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label layoutX="20.0" layoutY="21.0" text="Food's ID" textFill="#f4eaea">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="107.0" text="Name" textFill="#f2f2f4">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="179.0" text="Quantity" textFill="#f7f3f3">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label layoutX="23.0" layoutY="249.0" text="Price" textFill="#f2f1f1">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <TextField fx:id="IDTF" layoutX="172.0" layoutY="31.0" prefHeight="38.0" prefWidth="150.0" promptText="Enter food's ID" />
+      <TextField fx:id="NameTF" layoutX="164.0" layoutY="118.0" prefHeight="38.0" prefWidth="150.0" promptText="Enter food's name" />
+      <TextField fx:id="QuantityTF" layoutX="164.0" layoutY="186.0" prefHeight="38.0" prefWidth="150.0" promptText="Enter Quantity" />
+      <TextField fx:id="PriceTF" layoutX="164.0" layoutY="253.0" prefHeight="38.0" prefWidth="150.0" promptText="Enter Price" />
+      <HBox layoutX="364.0" layoutY="67.0" prefHeight="308.0" prefWidth="441.0">
+         <children>
+            <TableView fx:id="OrderTableView" prefHeight="308.0" prefWidth="440.0">
+              <columns>
+                <TableColumn fx:id="OrderNameCol" prefWidth="116.0" text="Name" />
+                  <TableColumn fx:id="OrderQuantityCol" prefWidth="117.60003662109375" text="Quantity" />
+                  <TableColumn fx:id="OrderPriceCol" prefWidth="125.60003662109375" text="Price" />
+                <TableColumn fx:id="OrderIDCol" prefWidth="75.0" text="ID" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <Label layoutX="496.0" layoutY="519.0" prefHeight="46.0" prefWidth="73.0" text="Total" textFill="#f7f0f0">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label layoutX="499.0" layoutY="593.0" text="Amount" textFill="#ece5e5">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <TextField fx:id="MenuAmountTF" layoutX="616.0" layoutY="597.0" prefHeight="38.0" prefWidth="150.0" promptText="0.0BDT" />
+      <Button layoutX="842.0" layoutY="602.0" mnemonicParsing="false" onAction="#ReceiptBtn" prefHeight="38.0" prefWidth="96.0" text="Pay">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label fx:id="MenuTotalLabel" layoutX="633.0" layoutY="529.0" prefHeight="46.0" prefWidth="150.0" text="0" textFill="#eae1e1">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Button layoutX="837.0" layoutY="537.0" mnemonicParsing="false" onAction="#ResetOrder" prefHeight="38.0" prefWidth="96.0" text="Reset">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="836.0" layoutY="463.0" mnemonicParsing="false" onAction="#Add" prefHeight="38.0" prefWidth="96.0" text="Order">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <TextField fx:id="SearchTF" layoutX="364.0" layoutY="375.0" prefHeight="54.0" prefWidth="168.0" promptText="Enter Food's Name to search" />
+      <Label alignment="CENTER" layoutX="365.0" prefHeight="67.0" prefWidth="440.0" style="-fx-background-color: violet;" text="FOOD MENU" textFill="#3e3b3b">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="679.0" text="Change" textFill="#efeded">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label fx:id="MenuChangeLabel" layoutX="635.0" layoutY="682.0" text="0.0BDT" textFill="#fcf5f5">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <TableView fx:id="MenuTableView" layoutX="806.0" layoutY="70.0" prefHeight="302.0" prefWidth="362.0">
+        <columns>
+          <TableColumn fx:id="MenuNameCol" prefWidth="119.199951171875" text="Name" />
+            <TableColumn fx:id="MenuQuantityCol" prefWidth="84.00006103515625" text="Quantity" />
+            <TableColumn fx:id="MenuPriceCol" prefWidth="103.20013427734375" text="Price" />
+          <TableColumn fx:id="MenuIDCol" prefWidth="47.9998779296875" text="ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="844.0" layoutY="669.0" mnemonicParsing="false" onAction="#MenuRemoveBtn" prefHeight="43.0" prefWidth="102.0" text="Remove">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="806.0" layoutY="-2.0" prefHeight="71.0" prefWidth="362.0" style="-fx-background-color: blue;" text="Order List" textFill="#eae1e1">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

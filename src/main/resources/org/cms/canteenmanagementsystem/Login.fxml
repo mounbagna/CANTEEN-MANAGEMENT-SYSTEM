@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cms.canteenmanagementsystem.LoginController">
+   <children>
+      <ImageView fx:id="myImageView" fitHeight="629.0" fitWidth="1103.0" layoutX="-104.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/first page background.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="127.0" text="User Name">
+         <font>
+            <Font size="61.0" />
+         </font></Label>
+      <TextField fx:id="userNameTextField" layoutX="375.0" layoutY="156.0" prefHeight="46.0" prefWidth="186.0" promptText="User name">
+         <font>
+            <Font size="27.0" />
+         </font></TextField>
+      <Label layoutX="34.0" layoutY="218.0" text="Password">
+         <font>
+            <Font size="61.0" />
+         </font></Label>
+      <Button fx:id="loginButton" layoutX="245.0" layoutY="622.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="98.0" prefWidth="514.0" style="-fx-background-color: green;" text="Login" textFill="#efe5e5">
+         <font>
+            <Font size="45.0" />
+         </font></Button>
+      <Button fx:id="cancelButton" layoutX="822.0" layoutY="625.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="90.0" prefWidth="164.0" style="-fx-background-color: red;" text="Cancel" textFill="#ece6e6">
+         <font>
+            <Font size="35.0" />
+         </font></Button>
+      <PasswordField fx:id="passwordTextField" layoutX="375.0" layoutY="231.0" prefHeight="46.0" prefWidth="186.0" promptText="Password">
+         <font>
+            <Font size="29.0" />
+         </font></PasswordField>
+      <Button fx:id="BackBtn" layoutX="14.0" layoutY="622.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="90.0" prefWidth="138.0" style="-fx-background-color: blue;" text="Back" textFill="#f2eaea">
+         <font>
+            <Font size="39.0" />
+         </font></Button>
+      <TextField fx:id="EmailTextField" layoutX="375.0" layoutY="330.0" prefHeight="46.0" prefWidth="186.0" promptText="Enter Email">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <Label layoutX="51.0" layoutY="301.0" prefHeight="90.0" prefWidth="147.0" text="Email">
+         <font>
+            <Font size="61.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

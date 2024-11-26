@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: violet;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cms.canteenmanagementsystem.RegistrationController">
+   <children>
+      <AnchorPane prefHeight="8.0" prefWidth="1000.0" style="-fx-background-color: #E96151;">
+         <children>
+            <Label alignment="CENTER" layoutX="-1.0" prefHeight="82.0" prefWidth="1000.0" text="CUSTOMER REGISTRATION" textFill="#efe1e1">
+               <font>
+                  <Font size="74.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="64.0" layoutY="162.0" text="Full Name">
+         <font>
+            <Font size="52.0" />
+         </font></Label>
+      <TextField fx:id="fullNameTextField" layoutX="493.0" layoutY="184.0" prefHeight="47.0" prefWidth="264.0" promptText="Enter your Full Name">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+      <Label layoutX="62.0" layoutY="253.0" text="Password">
+         <font>
+            <Font size="52.0" />
+         </font></Label>
+      <PasswordField fx:id="passwordTextField" layoutX="493.0" layoutY="275.0" prefHeight="47.0" prefWidth="264.0" promptText="Enter your password">
+         <font>
+            <Font size="25.0" />
+         </font></PasswordField>
+      <Button fx:id="closeButton" layoutX="814.0" layoutY="363.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="72.0" prefWidth="175.0" style="-fx-background-color: red;" text="Close" textFill="#f2d9d9">
+         <font>
+            <Font size="34.0" />
+         </font></Button>
+      <Button fx:id="confirmButton" layoutX="810.0" layoutY="184.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="72.0" prefWidth="175.0" style="-fx-background-color: green;" text="Confirm" textFill="#f7e6e6">
+         <font>
+            <Font size="31.0" />
+         </font></Button>
+      <PasswordField fx:id="confirmPasswordTextField" layoutX="500.0" layoutY="375.0" prefHeight="47.0" prefWidth="264.0" promptText="Confirm your password">
+         <font>
+            <Font size="21.0" />
+         </font></PasswordField>
+      <Label layoutX="62.0" layoutY="353.0" text="Confirm Password">
+         <font>
+            <Font size="52.0" />
+         </font></Label>
+      <Button fx:id="BackBtn" layoutX="810.0" layoutY="275.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="72.0" prefWidth="175.0" style="-fx-background-color: blue;" text="Back" textFill="#e7e3e3">
+         <font>
+            <Font size="34.0" />
+         </font></Button>
+      <TextField fx:id="EmailTextField" layoutX="500.0" layoutY="468.0" prefHeight="47.0" prefWidth="264.0" promptText="Enter Email">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Label layoutX="80.0" layoutY="446.0" text="Email">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="543.0" text="Telephone">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="648.0" text="Adress">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TelephoneTextField" layoutX="500.0" layoutY="571.0" prefHeight="47.0" prefWidth="264.0" promptText="enter Telephone">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="AdressTextField" layoutX="500.0" layoutY="670.0" prefHeight="47.0" prefWidth="264.0" promptText="Enter Adress">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

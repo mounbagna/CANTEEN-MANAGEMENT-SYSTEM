@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: violet;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cms.canteenmanagementsystem.EmployeeRegister">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" prefHeight="94.0" prefWidth="1000.0" style="-fx-background-color: BLACK;" text="EMPLOYEE REGISTRATION PAGE" textFill="#f7f1f1">
+         <font>
+            <Font size="68.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="131.0" text="Full Name" textFill="#403e3e">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fullNameTextField" layoutX="468.0" layoutY="124.0" prefHeight="56.0" prefWidth="186.0" promptText="Enter Name">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="confirmPasswordTextField" layoutX="468.0" layoutY="319.0" prefHeight="50.0" prefWidth="186.0" promptText="Confirm Your Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="44.0" layoutY="225.0" text="Password" textFill="#403e3e">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="312.0" text="Confirm Password" textFill="#403e3e">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="518.0" text="Telephone" textFill="#403e3e">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="408.0" text="Email" textFill="#403e3e">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="634.0" text="Adress" textFill="#403e3e">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordTextField" layoutX="463.0" layoutY="219.0" prefHeight="50.0" prefWidth="186.0" promptText="Enter Password">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="AdressTextField" layoutX="459.0" layoutY="646.0" prefHeight="50.0" prefWidth="195.0" promptText="Enter Adress">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="EmailTextField" layoutX="468.0" layoutY="427.0" prefHeight="50.0" prefWidth="186.0" promptText="Enter Email">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TelephoneTextField" layoutX="459.0" layoutY="532.0" prefHeight="50.0" prefWidth="195.0" promptText="Enter Telephone Number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="757.0" layoutY="369.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="119.0" prefWidth="232.0" style="-fx-background-color: BLUE;" text="BACK" textFill="#faf6f6">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Button>
+      <Button layoutX="753.0" layoutY="133.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="152.0" prefWidth="226.0" style="-fx-background-color: green;" text="CONFIRM" textFill="#ece7e7">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeButton" layoutX="760.0" layoutY="565.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="130.0" prefWidth="226.0" style="-fx-background-color: RED;" text="CLOSE" textFill="#faf6f6">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

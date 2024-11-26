@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: VIOLET;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cms.canteenmanagementsystem.EmployeePage">
+   <children>
+      <Label alignment="CENTER" layoutY="1.0" prefHeight="110.0" prefWidth="1000.0" style="-fx-background-color: BLACK;" text="LIST OF ORDERED PRODUCTS" textFill="#f2ecec">
+         <font>
+            <Font size="70.0" />
+         </font>
+      </Label>
+      <TableView fx:id="OrderTableView" layoutX="1.0" layoutY="104.0" prefHeight="400.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="OrderIDCol" prefWidth="147.1999785900116" text="ID" />
+          <TableColumn fx:id="OrderNameCol" prefWidth="264.8000030517578" text="NAME" />
+            <TableColumn fx:id="OrderQuantityCol" prefWidth="280.0" text="QUANTITY" />
+            <TableColumn fx:id="OrderPriceCol" prefWidth="236.800048828125" text="PRICE" />
+        </columns>
+      </TableView>
+      <Button fx:id="CloseBtn" layoutX="29.0" layoutY="593.0" mnemonicParsing="false" onAction="#BackBtn" prefHeight="80.0" prefWidth="154.0" style="-fx-background-color: blue;" text="BACK" textAlignment="CENTER" textFill="#efe8e8">
+         <font>
+            <Font size="34.0" />
+         </font></Button>
+      <Button fx:id="CloseBtn" layoutX="756.0" layoutY="581.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="80.0" prefWidth="166.0" style="-fx-background-color: red;" text="CLOSE" textFill="#efe6e6">
+         <font>
+            <Font size="38.0" />
+         </font></Button>
+      <Button layoutX="403.0" layoutY="592.0" mnemonicParsing="false" onAction="#DeleteOrder" prefHeight="80.0" prefWidth="154.0" style="-fx-background-color: red;" text="DELETE" textFill="#efe4e4">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <TextField fx:id="IDTF" layoutX="-2.0" layoutY="504.0" prefHeight="26.0" prefWidth="166.0" promptText=" Enter Food's ID here" />
+   </children>
+</AnchorPane>

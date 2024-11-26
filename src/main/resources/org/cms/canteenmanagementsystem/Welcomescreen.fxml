@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cms.canteenmanagementsystem.WelcomeScreenController">
+   <children>
+      <ImageView fx:id="myImageView" fitHeight="1000.0" fitWidth="1000.0" onDragDetected="#EmployeeRegistration" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/cafePicture.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="107.0" layoutY="787.0" mnemonicParsing="false" onAction="#gotoLoginMenu" prefHeight="56.0" prefWidth="823.0" text="Admin Login">
+         <font>
+            <Font size="26.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutY="702.0" mnemonicParsing="false" onAction="#gotoRegisterMenu" prefHeight="54.0" prefWidth="464.0" text="Customer Register">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="522.0" layoutY="706.0" mnemonicParsing="false" onAction="#CustomerLogin" prefHeight="62.0" prefWidth="464.0" text="Customer Login" textAlignment="RIGHT">
+         <font>
+            <Font size="27.0" />
+         </font></Button>
+      <Button fx:id="cancelButton" layoutX="500.0" layoutY="478.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="92.0" prefWidth="264.0" style="-fx-background-color: red;" text="Close" textFill="#faf4f4">
+         <font>
+            <Font size="50.0" />
+         </font></Button>
+      <Button layoutX="522.0" layoutY="644.0" mnemonicParsing="false" onAction="#EmployeeLogin" prefHeight="62.0" prefWidth="464.0" text="Employee Login">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutY="644.0" mnemonicParsing="false" onAction="#EmployeeRegistration" prefHeight="48.0" prefWidth="464.0" text="Employee Register">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
