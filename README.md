@@ -1,4 +1,4 @@
-# Cafeteria Management System - Documentation
+# Cafeteria Management System
 ## Overview
 The Cafeteria Management System is a JavaFX-based application designed to streamline the cafeteria ordering process. The application is built using IntelliJ IDEA Community Edition and uses MySQL for data storage. The system supports three types of users: Employee, Admin, and Customer, each with their own set of functionalities.
 
@@ -26,6 +26,7 @@ The Cafeteria Management System is a JavaFX-based application designed to stream
 ## Setup and Configuration
 ### 1. Database Connection:
 - Download the MySQL Connector and place it in the lib folder of the project.
+- right click on the jar file and click on 'Add library'
 - The application will use this connector to establish a connection with the MySQL database.
 
 ### 2. Running the Application:
